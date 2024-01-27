@@ -1,0 +1,59 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+#introduction{
+
+  color:blue;
+}
+/**style for the button elements */
+
+button{
+  background-color: deeppink;
+  border: none;
+  border-radius: 25px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover{
+  background-color: hotpink;
+  color: #027472
+}
+
+button.buttons{
+  transition: 0.2s ease-in-out 0s;
+}
+
+button.buttons:hover{
+  transform: scale(1.25);
+}
+/**style for the body and form element of the game **/
+
+body{
+  background-image: url(images/carnival_num.png);
+}
+
+form{
+  padding: 20px;
+  text-align: center;
+  background-color: lightpink;
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px deeppink;
+}
+
+.form-container {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+/**style for the audio player which was later hidden using <embed> **/
+audio{
+  border-radius: 25px;
+  box-shadow: 10px 10px 10px deeppink;
+}
+
+.audio-container{
+  display: grid;
+}

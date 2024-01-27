@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>GuessTheNumber</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    
+  <div class="audio-container">
+    <audio autoplay loop >
+      <source src="music/get-funky.mp3" type="audio/mpeg">
+      <source src="music/get-funky.ogg" type="audio/ogg"> 
+    </audio>
+    </div>
+  
+ <div class="form-container">
+  <form onsubmit = "GuessTheNumber(event)">
+    <em><p id = "introduction">I'm thinking of a number from 1 to 100...Can you guess what number I'm thinking of?</p></em>
+    <input name = "guess" type = "number" id = "ip" placeholder= "please enter a number" required>
+    <em><p id = "recentguess"></p></em>
+    <em><p id = "score">score - 100</p></em>
+    <button class="buttons submit" id="sb"><i>Submit guess</i></button>
+    
+    <em><p id = "feedbackmessage"></p></em>
+    <button class="buttons" id="playagain" onclick="playAgain()"><i>Play again</i></button>
+  </form >
+ </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
